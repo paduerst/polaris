@@ -1,0 +1,33 @@
+.container {
+  width: 60%;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #5046a0;
+    border-color: #362d7c;
+    border-radius: 0px;
+    margin-bottom: -5px;
+}
+.navbar-brand{
+    height: 80px;
+}
+.navbar-brand img{
+    height: 100%;
+    margin-left: -16px;
+}
+
+.navbar-nav a{
+    height: 80px;
+}
+.menu_label {
+    color: #ffe06f;
+}
+.menu_label:hover {
+    color: #5046a0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #5046a0;
+    margin-top: 25px;
+}
