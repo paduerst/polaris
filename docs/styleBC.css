@@ -31,3 +31,7 @@ h1,h2,h3,h4,h5,h6{
     color: #5046a0;
     margin-top: 25px;
 }
+
+.indent-1 {
+    text-indent: 40px;
+}
