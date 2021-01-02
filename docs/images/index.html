@@ -74,7 +74,7 @@
             };
             let output = "";
             for (const key in img_dict) {
-                output = output + `<h4>${img_dict[key].title}</h4><img src="https://polaris.duerst.me/images/${key}" alt="${img_dict[key].alt}">`;
+                output = output + `<h4>${img_dict[key].title}</h4><img style="width:100%" src="https://polaris.duerst.me/images/${key}" alt="${img_dict[key].alt}">`;
             }
             images_output.innerHTML = output;
         </script>
