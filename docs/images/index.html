@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://polaris.duerst.me/images/favicon.png"/>
+        <title>Polaris | Images</title>
+        <meta property="og:title" content="Polaris | Images">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Website for the Polaris D&D 5e campaign.">
+        <meta property="og:image" content="https://polaris.duerst.me/images/preview.png">
+        <meta property="og:url" content="https://polaris.duerst.me/images">
+
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans|Source+Serif+Pro" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://polaris.duerst.me/styleBC.css">
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="https://polaris.duerst.me"><img src="https://polaris.duerst.me/images/polaris.png"/></a>
+                </div>
+                <!--<ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="menu_label">menu 1</a></li>
+                    <li><a href="#" class="menu_label">menu 2</a></li>
+                </ul>-->
+            </div>
+        </nav>
+          
+        <div class="container" style="padding: 10px 0 10px 0;">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <p>Maps: <a href="https://polaris.duerst.me/images/maps">link</a></p>
+                    
+                    <h3>Images</h3>
+
+                    <div id="images_output">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const img_dict = {
+                "alara.jpg": {
+                    "title": "Alara",
+                    "alt": "An aerial view of Alara, a towering City. The Citadel at its heart is a castle thousands of feet tall."
+                },
+                "les_bois.jpeg": {
+                    "title": "Les Bois (The Woods)",
+                    "alt": "A view of a doorway into some long-forgotten and plant-covered ruins in the Woods."
+                },
+                "les_bois_scary.jpeg": {
+                    "title": "Scary Les Bois (The Woods)",
+                    "alt": "A terrifying sight: shadowy beasts in the the dark and twisted woods of Les Bois."
+                },
+                "luco_arcano.jpeg": {
+                    "title": "Luco Arcano (The Mystic Grove)",
+                    "alt": "A view of the bright red trees of Luco Arcano, the Mystic Grove."
+                }
+            };
+            let output = "";
+            for (const key in img_dict) {
+                output = output + `<h4>${img_dict[key].title}</h4><img src="https://polaris.duerst.me/images/${key}" alt="${img_dict[key].alt}">`;
+            }
+            images_output.innerHTML = output;
+        </script>
+
+    </body>
+
+</html>
