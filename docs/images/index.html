@@ -5,13 +5,13 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="https://polaris.duerst.me/images/favicon.png"/>
+        <link rel="icon" href="https://polarisold.duerst.me/images/favicon.png"/>
         <title>Polaris | Images</title>
         <meta property="og:title" content="Polaris | Images">
         <meta property="og:type" content="website">
         <meta property="og:description" content="Website for the Polaris D&D 5e campaign.">
-        <meta property="og:image" content="https://polaris.duerst.me/images/preview.png">
-        <meta property="og:url" content="https://polaris.duerst.me/images">
+        <meta property="og:image" content="https://polarisold.duerst.me/images/preview.png">
+        <meta property="og:url" content="https://polarisold.duerst.me/images">
 
         <!-- Bootstrap CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -21,7 +21,7 @@
         <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans|Source+Serif+Pro" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://polaris.duerst.me/styleBC.css">
+        <link rel="stylesheet" href="https://polarisold.duerst.me/styleBC.css">
     </head>
 
     <body>
@@ -29,7 +29,7 @@
         <nav class="navbar">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="https://polaris.duerst.me"><img src="https://polaris.duerst.me/images/polaris.png"/></a>
+                    <a class="navbar-brand" href="https://polarisold.duerst.me"><img src="https://polarisold.duerst.me/images/polaris.png"/></a>
                 </div>
                 <!--<ul class="nav navbar-nav navbar-right">
                     <li><a href="#" class="menu_label">menu 1</a></li>
@@ -42,7 +42,7 @@
             <div class="row">
                 <div class="col-sm-12">
 
-                    <p>Maps: <a href="https://polaris.duerst.me/images/maps">link</a></p>
+                    <p>Maps: <a href="https://polarisold.duerst.me/images/maps">link</a></p>
                     
                     <h3>Images</h3>
 
@@ -74,11 +74,15 @@
                 "seymour_pumpernickel_iv.jpg": {
                     "title": "Lord Seymour Pumpernickel IV, Earl of Dorset",
                     "alt": "Pictured is Alara's Lord Seymour Pumpernickel IV, Earl of Dorset. He is a white man with dark brown hair wearing a purple tunic over leather armor."
+                },
+                "magic_marge.jpg": {
+                    "title": "Magic Marge",
+                    "alt": "Pictured is Magic Marge, the mysterious magic item merchant. She is a white elf woman with silvery grey hair. She's wearing a stylish black hat with a pink flower in its band. Her purple cloak's clasp is a button with a stylized M in it, her symbol. Her head is tilted up, and her lips are parted in a wry smile as if she's about to say something. Her eyes glint purple with mischievousness and the suggestion of hidden knowledge. This drawing was created by Hannah Jerrie."
                 }
             };
             let output = "";
             for (const key in img_dict) {
-                output = output + `<h4>${img_dict[key].title}</h4><img style="width:100%" src="https://polaris.duerst.me/images/${key}" alt="${img_dict[key].alt}">`;
+                output = output + `<h4>${img_dict[key].title}</h4><img style="width:100%" src="https://polarisold.duerst.me/images/${key}" alt="${img_dict[key].alt}">`;
             }
             images_output.innerHTML = output;
         </script>
